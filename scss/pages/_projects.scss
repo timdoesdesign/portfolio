@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the projects page.
+// -----------------------------------------------------------------------------
+
+.projects {
+  article {
+    margin-bottom: 1em;
+    padding-top: 1em;
+
+    &:nth-child(2) {
+      background-color: rgba($primary-color-light, .25);
+    }
+    
+    h3, p {
+      text-align: left;
+    }
+  }
+
+  .button {
+    margin-top: 1em;
+  }
+
+  @media #{$break-large} {
+    p {
+      font-size: 1.5em;
+    }
+  }
+}

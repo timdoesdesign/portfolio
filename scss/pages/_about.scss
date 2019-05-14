@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the about page.
+// -----------------------------------------------------------------------------
+
+@import '../abstracts/variables';
+
+.about {
+
+  img {
+    border-radius: 50%;
+    max-width: 200px;
+  }
+
+  @media #{$break-med} {
+    p {
+      font-size: 1.2em;
+      padding: 0 2rem;
+    }
+  }
+
+  @media #{$break-large} {
+    main {
+      width: 64em !important;
+      margin: auto;
+    }
+
+    p {
+      font-size: 1.3em;
+      text-align: left;
+    }
+  }
+}

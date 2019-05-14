@@ -1,0 +1,21 @@
+/***************************
+SOCIAL MEDIA ICONS
+***************************/
+
+.social-media {
+  margin-bottom: 1em;
+  text-align: center;
+  
+  a {
+    font-size: 3em;
+    margin: .5em;
+    color: $primary-color;
+    transition: $color-change;
+    
+    &:hover
+    {
+      color: $primary-color-dark;
+    }
+  }
+  
+}

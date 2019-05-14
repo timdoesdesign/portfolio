@@ -1,0 +1,13 @@
+*/_notes
+/foundation-icons
+/generic-county
+/js
+/node_modules
+/peak-training
+/vicious-cycles
+*.map
+*.odt
+*.json
+*.pdf
+*.xml
+scss/*/*.md

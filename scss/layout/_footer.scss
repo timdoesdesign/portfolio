@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+footer {
+  background-color: $footer-color;
+  color: $foreground-color;
+  margin-top: 1em;
+  padding-bottom: 1em;
+  
+  div:last-of-type {
+    a {
+      display: block;
+      margin-bottom: 1.5em;
+      
+      @media #{$break-med} {
+        display: inline-block;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+      }
+    }
+  }
+}

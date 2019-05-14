@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+// Fonts
+$logo-font: 'Lobster Two', cursive;
+$site-font: 'Raleway', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+// Colors
+$primary-color: #57ba86;
+$primary-color-light: lighten($primary-color, 10%);
+$primary-color-dark: darken($primary-color, 30%);
+
+$footer-color: #2d3a33;
+
+$secondary-color: #3f8761;
+$secondary-color-dark: darken($secondary-color, 30%);
+
+$foreground-color: #fcfcfc;
+$background-color: #ecf7fa;
+
+// Generic County
+$county-colors: #B7F5B7, #006400, #FFF8DC;
+$county-colors-length: length($county-colors);
+//$county-color2: #006400;
+//$county-color3: #FFF8DC;
+
+// Peak Training
+$peak-colors: #0F69A7, #84B1DA, #F1F3F0, #BEA36C, #0A0B0D;
+$peak-colors-length: length($peak-colors);
+
+// Vicious Cycles
+$cycles-colors: #A3620A, #FFE800, #D9D9D9, #545454;
+$cycles-colors-length: length($cycles-colors);
+
+// Hover Effects
+$color-change: color 0.15s ease-in;
+
+// Media Queries
+$break-med: "screen and (min-width: 40em)";
+$break-large: "screen and (min-width: 64em)";

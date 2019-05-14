@@ -1,0 +1,61 @@
+@import '../abstracts/variables';
+
+.topbar-responsive {
+  background: $primary-color;
+  padding: 0;
+  
+  @media #{$break-med} {
+    padding: .5rem 0 .5rem 1rem;
+  }
+  
+  .top-bar-title {
+    position: relative;
+    margin: auto;
+  }
+  
+  .topbar-responsive-logo {
+    color: $foreground-color;
+    vertical-align: middle;
+  }
+  
+  .top-bar-menu {
+    position: relative;
+    width: 100%;
+  }
+  
+  .menu {
+    background: inherit;
+    justify-content: space-around;
+    
+    @media #{$break-med} {
+        justify-content: flex-end;
+    }
+    
+    .is-active a {
+      background-color: inherit;
+      color: $primary-color-dark;
+      pointer-events: none;
+    }
+    
+    a {
+      color: $foreground-color;
+      transition: color 0.15s ease-in;
+
+      &:hover {
+        color: $primary-color-dark;
+      }
+      
+      @media #{$break-med} {
+        font-size: 1.1em;
+        
+        & i {
+//          display: none;
+        }
+      }
+      
+      @media #{$break-large} {
+        font-size: 1.5em;
+      }
+    }
+  } 
+}

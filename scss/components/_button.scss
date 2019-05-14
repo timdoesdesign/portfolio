@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+@import '../abstracts/variables';
+
+.button {
+  background: $primary-color;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto 1.5em;
+  width: 10em;
+  
+  &:hover {
+    background: $primary-color-dark;
+  }
+  
+  @media #{$break-med} {
+    font-size: 1.25em;
+  }
+  
+  @media #{$break-large} {
+    font-size: 1.5em;
+  }
+}

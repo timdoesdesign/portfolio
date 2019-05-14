@@ -1,0 +1,468 @@
+@import "../foundation-icons/foundation-icons.css";
+@font-face {
+  font-family: "foundation-icons";
+  src: url("../foundation-icons/foundation-icons.eot");
+  src: url("../foundation-icons/foundation-icons.eot?#iefix") format("embedded-opentype"), url("../foundation-icons/foundation-icons.woff") format("woff"), url("../foundation-icons/foundation-icons.ttf") format("truetype"), url("../foundation-icons/foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #ecf7fa;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+h4 {
+  color: #fcfcfc;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  transition: color 0.15s ease-in;
+}
+a:visited {
+  background: #57ba86;
+}
+a:hover {
+  color: #7bc9a0;
+}
+
+/**
+ * Basic styles for links
+ */
+/**
+ * Basic typography style for copy text
+ */
+body, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-family: "Lobster Two", cursive;
+  font-size: 2.75em;
+  text-transform: lowercase;
+}
+
+h2, h3 {
+  font-size: 2em;
+}
+@media screen and (min-width: 40em) {
+  h2, h3 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 64em) {
+  h2, h3 {
+    font-size: 2.75em;
+  }
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+header {
+  margin-bottom: 1.5em;
+}
+
+.topbar-responsive {
+  background: #57ba86;
+  padding: 0;
+}
+@media screen and (min-width: 40em) {
+  .topbar-responsive {
+    padding: 0.5rem 0 0.5rem 1rem;
+  }
+}
+.topbar-responsive .top-bar-title {
+  position: relative;
+  margin: auto;
+}
+.topbar-responsive .topbar-responsive-logo {
+  color: #fcfcfc;
+  vertical-align: middle;
+}
+.topbar-responsive .top-bar-menu {
+  position: relative;
+  width: 100%;
+}
+.topbar-responsive .menu {
+  background: inherit;
+  justify-content: space-around;
+}
+@media screen and (min-width: 40em) {
+  .topbar-responsive .menu {
+    justify-content: flex-end;
+  }
+}
+.topbar-responsive .menu .is-active a {
+  background-color: inherit;
+  color: #23553b;
+  pointer-events: none;
+}
+.topbar-responsive .menu a {
+  color: #fcfcfc;
+  transition: color 0.15s ease-in;
+}
+.topbar-responsive .menu a:hover {
+  color: #23553b;
+}
+@media screen and (min-width: 40em) {
+  .topbar-responsive .menu a {
+    font-size: 1.1em;
+  }
+}
+@media screen and (min-width: 64em) {
+  .topbar-responsive .menu a {
+    font-size: 1.5em;
+  }
+}
+
+footer {
+  background-color: #2d3a33;
+  color: #fcfcfc;
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+footer div:last-of-type a {
+  display: block;
+  margin-bottom: 1.5em;
+}
+@media screen and (min-width: 40em) {
+  footer div:last-of-type a {
+    display: inline-block;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+}
+
+.button {
+  background: #57ba86;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto 1.5em;
+  width: 10em;
+}
+.button:hover {
+  background: #23553b;
+}
+@media screen and (min-width: 40em) {
+  .button {
+    font-size: 1.25em;
+  }
+}
+@media screen and (min-width: 64em) {
+  .button {
+    font-size: 1.5em;
+  }
+}
+
+/***************************
+SOCIAL MEDIA ICONS
+***************************/
+.social-media {
+  margin-bottom: 1em;
+  text-align: center;
+}
+.social-media a {
+  font-size: 3em;
+  margin: 0.5em;
+  color: #57ba86;
+  transition: color 0.15s ease-in;
+}
+.social-media a:hover {
+  color: #23553b;
+}
+
+.sub-title {
+  font-size: 2.5em;
+}
+@media screen and (min-width: 40em) {
+  .sub-title {
+    font-size: 4em;
+  }
+}
+
+.project svg {
+  max-width: 6em;
+}
+@media screen and (min-width: 40em) {
+  .project svg {
+    max-width: 7em;
+  }
+}
+@media screen and (min-width: 64em) {
+  .project svg {
+    max-width: 8em;
+  }
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(14, 31, 22, 0.8);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #fcfcfc;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  color: #fcfcfc;
+}
+
+.fadeIn-top {
+  top: 20%;
+}
+
+.about img {
+  border-radius: 50%;
+  max-width: 200px;
+}
+@media screen and (min-width: 40em) {
+  .about p {
+    font-size: 1.2em;
+    padding: 0 2rem;
+  }
+}
+@media screen and (min-width: 64em) {
+  .about main {
+    width: 64em !important;
+    margin: auto;
+  }
+  .about p {
+    font-size: 1.3em;
+    text-align: left;
+  }
+}
+
+.projects article {
+  margin-bottom: 1em;
+  padding-top: 1em;
+}
+.projects article:nth-child(2) {
+  background-color: rgba(123, 201, 160, 0.25);
+}
+.projects article h3, .projects article p {
+  text-align: left;
+}
+.projects .button {
+  margin-top: 1em;
+}
+@media screen and (min-width: 64em) {
+  .projects p {
+    font-size: 1.5em;
+  }
+}
+
+.overview .breadcrumbs {
+  padding-left: 1em;
+}
+.overview .breadcrumbs li {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 40em) {
+  .overview .breadcrumbs li {
+    font-size: 1.1rem;
+  }
+}
+.overview .breadcrumbs li span {
+  color: #23553b;
+  font-weight: bold;
+}
+.overview .breadcrumbs li a {
+  color: #3f8761;
+  text-decoration: underline;
+}
+.overview .breadcrumbs li a:hover {
+  text-decoration: none;
+}
+.overview h3,
+.overview p {
+  text-align: left;
+}
+.overview .font p {
+  font-family: "Segoe UI";
+}
+.overview .county-color-scheme {
+  background-color: rgba(14, 31, 22, 0.2);
+  border-radius: 10px;
+  padding-bottom: 1em;
+}
+.overview .county-color-scheme div {
+  border-radius: 0 0 10px 10px;
+  display: inline-block;
+  height: 7em;
+  padding: 1em;
+  width: 30%;
+}
+.overview .county-color-scheme div:nth-of-type(3n+1) {
+  background-color: #B7F5B7;
+}
+.overview .county-color-scheme div:nth-of-type(3n+2) {
+  background-color: #006400;
+}
+.overview .county-color-scheme div:nth-of-type(3n+3) {
+  background-color: #FFF8DC;
+}
+.overview .peak-color-scheme {
+  background-color: rgba(14, 31, 22, 0.2);
+  border-radius: 10px;
+  padding-bottom: 1em;
+}
+.overview .peak-color-scheme div {
+  border-radius: 0 0 10px 10px;
+  display: inline-block;
+  height: 7em;
+  padding: 1em;
+  width: 15%;
+}
+.overview .peak-color-scheme div:nth-of-type(5n+1) {
+  background-color: #0F69A7;
+}
+.overview .peak-color-scheme div:nth-of-type(5n+2) {
+  background-color: #84B1DA;
+}
+.overview .peak-color-scheme div:nth-of-type(5n+3) {
+  background-color: #F1F3F0;
+}
+.overview .peak-color-scheme div:nth-of-type(5n+4) {
+  background-color: #BEA36C;
+}
+.overview .peak-color-scheme div:nth-of-type(5n+5) {
+  background-color: #0A0B0D;
+}
+.overview .cycles-color-scheme {
+  background-color: rgba(14, 31, 22, 0.2);
+  border-radius: 10px;
+  padding-bottom: 1em;
+}
+.overview .cycles-color-scheme div {
+  border-radius: 0 0 10px 10px;
+  display: inline-block;
+  height: 7em;
+  padding: 1em;
+  width: 20%;
+}
+.overview .cycles-color-scheme div:nth-of-type(4n+1) {
+  background-color: #A3620A;
+}
+.overview .cycles-color-scheme div:nth-of-type(4n+2) {
+  background-color: #FFE800;
+}
+.overview .cycles-color-scheme div:nth-of-type(4n+3) {
+  background-color: #D9D9D9;
+}
+.overview .cycles-color-scheme div:nth-of-type(4n+4) {
+  background-color: #545454;
+}
+
+/*# sourceMappingURL=main.css.map */

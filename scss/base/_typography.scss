@@ -1,0 +1,30 @@
+/**
+ * Basic typography style for copy text
+ */
+
+
+body, h2, h3, h4, h5, h6 {
+  font-family: $site-font;
+}
+
+h1 {
+  font-family: $logo-font;
+  font-size: 2.75em;
+  text-transform: lowercase;
+}
+
+h2, h3 {
+  font-size: 2em;
+  
+  @media #{$break-med} {
+    font-size: 2.5em;
+  }
+  
+  @media #{$break-large} {
+    font-size: 2.75em;
+  }
+}
+
+p {
+  font-family: $body-font;
+}

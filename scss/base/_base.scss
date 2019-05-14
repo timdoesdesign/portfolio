@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+@import '../abstracts/variables';
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: $background-color;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+h4 {
+  color: $foreground-color;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  transition: $color-change;
+  
+  &:visited {
+    background: $primary-color;
+  }
+  
+  &:hover {
+    color: $primary-color-light;
+  }
+}
+
+/**
+ * Basic styles for links
+ */
+//a {
+////  color: ;
+//  text-decoration: none;
+//
+//  @include on-event {
+////    color: ;
+//    text-decoration: underline;
+//  }
+//}
