@@ -395,7 +395,6 @@ SOCIAL MEDIA ICONS
 .overview .county-color-scheme {
   background-color: rgba(14, 31, 22, 0.2);
   border-radius: 10px;
-  padding-bottom: 1em;
 }
 .overview .county-color-scheme div {
   border-radius: 0 0 10px 10px;
@@ -416,34 +415,32 @@ SOCIAL MEDIA ICONS
 .overview .peak-color-scheme {
   background-color: rgba(14, 31, 22, 0.2);
   border-radius: 10px;
-  padding-bottom: 1em;
 }
 .overview .peak-color-scheme div {
   border-radius: 0 0 10px 10px;
   display: inline-block;
-  height: 7em;
+  height: 4em;
   padding: 1em;
   width: 15%;
 }
 .overview .peak-color-scheme div:nth-of-type(5n+1) {
-  background-color: #0F69A7;
+  background-color: #152533;
 }
 .overview .peak-color-scheme div:nth-of-type(5n+2) {
-  background-color: #84B1DA;
+  background-color: #26425A;
 }
 .overview .peak-color-scheme div:nth-of-type(5n+3) {
-  background-color: #F1F3F0;
+  background-color: #84B1DA;
 }
 .overview .peak-color-scheme div:nth-of-type(5n+4) {
-  background-color: #BEA36C;
+  background-color: #C2F6FE;
 }
 .overview .peak-color-scheme div:nth-of-type(5n+5) {
-  background-color: #0A0B0D;
+  background-color: #fff;
 }
 .overview .cycles-color-scheme {
   background-color: rgba(14, 31, 22, 0.2);
   border-radius: 10px;
-  padding-bottom: 1em;
 }
 .overview .cycles-color-scheme div {
   border-radius: 0 0 10px 10px;
