@@ -19,11 +19,9 @@ $secondary-color-dark: darken($secondary-color, 30%);
 $foreground-color: #fcfcfc;
 $background-color: #ecf7fa;
 
-// Generic County
-$county-colors: #B7F5B7, #006400, #FFF8DC;
+// Stokes County
+$county-colors: #343A40, #6C98C5, #FFFFCC, #F5FFF5;
 $county-colors-length: length($county-colors);
-//$county-color2: #006400;
-//$county-color3: #FFF8DC;
 
 // Peak Training
 $peak-colors: #152533, #26425A, #84B1DA, #C2F6FE, #fff;
