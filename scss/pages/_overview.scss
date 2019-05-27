@@ -35,6 +35,10 @@
     text-align: left;
   }
 
+  p > a {
+    text-decoration: underline;
+  }
+
   .font {
     p {
       font-family: "Segoe UI";
@@ -44,16 +48,10 @@
 
   // County Color Scheme and Font
   .county-color-scheme {
-    background-color: rgba($secondary-color-dark, .2);
-    border-radius: 10px;
-//    padding-bottom: 1em;
+    @include color-theme;
 
     div {
-      border-radius: 0 0 10px 10px;
-      display: inline-block;
-      height: 7em;
-      padding: 1em;
-      width: 30%;
+      width: 20%;
 
       @for $i from 1 through $county-colors-length {
         &:nth-of-type(#{$county-colors-length}n+#{$i}) {
@@ -65,15 +63,9 @@
 
   // Peak Training Color Scheme and Font
   .peak-color-scheme {
-    background-color: rgba($secondary-color-dark, .2);
-    border-radius: 10px;
-//    padding-bottom: 1em;
+    @include color-theme;
 
     div {
-      border-radius: 0 0 10px 10px;
-      display: inline-block;
-      height: 4em;
-      padding: 1em;
       width: 15%;
 
       @for $i from 1 through $peak-colors-length {
@@ -86,15 +78,9 @@
 
   // Vicious Cycles Color Scheme and Font
   .cycles-color-scheme {
-    background-color: rgba($secondary-color-dark, .2);
-    border-radius: 10px;
-//    padding-bottom: 1em;
+    @include color-theme;
 
     div {
-      border-radius: 0 0 10px 10px;
-      display: inline-block;
-      height: 7em;
-      padding: 1em;
       width: 20%;
 
       @for $i from 1 through $cycles-colors-length {
