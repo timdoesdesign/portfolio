@@ -2,10 +2,10 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
-@mixin color-theme {
+@mixin color-theme($width) {
   background-color: rgba($secondary-color-dark, .2);
   border-radius: 10px;
-  @media #{break-med}{
+  @media #{$break-med}{
     width: 90%;
   }
   div {
@@ -13,5 +13,6 @@
     display: inline-block;
     height: 4em;
     padding: 1em;
+    width: $width;
   }
 }

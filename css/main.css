@@ -1830,7 +1830,7 @@ SOCIAL MEDIA ICONS
   background-color: rgba(14, 31, 22, 0.2);
   border-radius: 10px;
 }
-@media break-med {
+@media screen and (min-width: 40em) {
   .overview .county-color-scheme {
     width: 90%;
   }
@@ -1840,8 +1840,6 @@ SOCIAL MEDIA ICONS
   display: inline-block;
   height: 4em;
   padding: 1em;
-}
-.overview .county-color-scheme div {
   width: 20%;
 }
 .overview .county-color-scheme div:nth-of-type(4n+1) {
@@ -1860,7 +1858,7 @@ SOCIAL MEDIA ICONS
   background-color: rgba(14, 31, 22, 0.2);
   border-radius: 10px;
 }
-@media break-med {
+@media screen and (min-width: 40em) {
   .overview .peak-color-scheme {
     width: 90%;
   }
@@ -1870,8 +1868,6 @@ SOCIAL MEDIA ICONS
   display: inline-block;
   height: 4em;
   padding: 1em;
-}
-.overview .peak-color-scheme div {
   width: 15%;
 }
 .overview .peak-color-scheme div:nth-of-type(5n+1) {
@@ -1893,7 +1889,7 @@ SOCIAL MEDIA ICONS
   background-color: rgba(14, 31, 22, 0.2);
   border-radius: 10px;
 }
-@media break-med {
+@media screen and (min-width: 40em) {
   .overview .cycles-color-scheme {
     width: 90%;
   }
@@ -1903,8 +1899,6 @@ SOCIAL MEDIA ICONS
   display: inline-block;
   height: 4em;
   padding: 1em;
-}
-.overview .cycles-color-scheme div {
   width: 20%;
 }
 .overview .cycles-color-scheme div:nth-of-type(4n+1) {

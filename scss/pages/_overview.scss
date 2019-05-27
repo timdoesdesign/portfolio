@@ -48,10 +48,9 @@
 
   // County Color Scheme and Font
   .county-color-scheme {
-    @include color-theme;
+    @include color-theme(20%);
 
     div {
-      width: 20%;
 
       @for $i from 1 through $county-colors-length {
         &:nth-of-type(#{$county-colors-length}n+#{$i}) {
@@ -63,10 +62,9 @@
 
   // Peak Training Color Scheme and Font
   .peak-color-scheme {
-    @include color-theme;
+    @include color-theme(15%);
 
     div {
-      width: 15%;
 
       @for $i from 1 through $peak-colors-length {
         &:nth-of-type(#{$peak-colors-length}n+#{$i}) {
@@ -78,10 +76,9 @@
 
   // Vicious Cycles Color Scheme and Font
   .cycles-color-scheme {
-    @include color-theme;
+    @include color-theme(20%);
 
     div {
-      width: 20%;
 
       @for $i from 1 through $cycles-colors-length {
         &:nth-of-type(#{$cycles-colors-length}n+#{$i}) {
@@ -90,5 +87,4 @@
       }
     }
   }
-
 }
