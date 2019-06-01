@@ -75,14 +75,14 @@
   }
 
   // Vicious Cycles Color Scheme and Font
-  .cycles-color-scheme {
+  .biltmore-color-scheme {
     @include color-theme(20%);
 
     div {
 
-      @for $i from 1 through $cycles-colors-length {
-        &:nth-of-type(#{$cycles-colors-length}n+#{$i}) {
-          background-color: nth($cycles-colors, $i);
+      @for $i from 1 through $biltmore-colors-length {
+        &:nth-of-type(#{$biltmore-colors-length}n+#{$i}) {
+          background-color: nth($biltmore-colors, $i);
         }
       }
     }
