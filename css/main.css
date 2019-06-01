@@ -1758,6 +1758,9 @@ SOCIAL MEDIA ICONS
   border-radius: 50%;
   max-width: 200px;
 }
+.about p {
+  text-align: left;
+}
 @media screen and (min-width: 40em) {
   .about p {
     font-size: 1.2em;
@@ -1771,7 +1774,6 @@ SOCIAL MEDIA ICONS
   }
   .about p {
     font-size: 1.3em;
-    text-align: left;
   }
 }
 

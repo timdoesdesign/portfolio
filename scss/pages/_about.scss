@@ -10,6 +10,10 @@
     border-radius: 50%;
     max-width: 200px;
   }
+  
+  p {
+    text-align: left;
+  }
 
   @media #{$break-med} {
     p {
@@ -26,7 +30,6 @@
 
     p {
       font-size: 1.3em;
-      text-align: left;
     }
   }
 }
