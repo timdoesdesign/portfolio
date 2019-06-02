@@ -5,6 +5,7 @@
 /node_modules
 /peak-training
 /biltmore
+*.htaccess
 *.map
 *.odt
 *.json
