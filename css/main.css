@@ -1609,6 +1609,20 @@ footer {
   color: #fcfcfc;
   margin-top: 1em;
   padding-bottom: 1em;
+  font-size: 0.8rem;
+}
+footer .button {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 40em) {
+  footer .button {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 64em) {
+  footer .button {
+    font-size: 1.25rem;
+  }
 }
 footer div:last-of-type a {
   display: block;
@@ -1658,6 +1672,19 @@ SOCIAL MEDIA ICONS
 }
 .social-media a:hover {
   color: #23553b;
+}
+
+main,
+footer {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.5s, opacity 1s;
+}
+
+body.loaded main,
+body.loaded footer {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .sub-title {

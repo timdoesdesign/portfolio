@@ -7,6 +7,21 @@ footer {
   color: $foreground-color;
   margin-top: 1em;
   padding-bottom: 1em;
+  font-size: .8rem;
+  
+  .button {
+    font-size: .8rem;
+  
+  
+    @media #{$break-med} {
+    font-size: 1rem;
+  }
+  
+  @media #{$break-large} {
+    font-size: 1.25rem;
+  }
+    
+  }
   
   div:last-of-type {
     a {
