@@ -27,6 +27,10 @@
     background: inherit;
     justify-content: space-around;
     
+    a {
+      font-size: .9rem;
+    }
+    
     @media #{$break-med} {
         justify-content: flex-end;
     }

@@ -1576,6 +1576,9 @@ header {
   background: inherit;
   justify-content: space-around;
 }
+.topbar-responsive .menu a {
+  font-size: 0.9rem;
+}
 @media screen and (min-width: 40em) {
   .topbar-responsive .menu {
     justify-content: flex-end;
