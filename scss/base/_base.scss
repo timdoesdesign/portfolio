@@ -26,6 +26,9 @@ html {
 body {
   background: $background-color;
   text-align: center;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 h1 {
@@ -51,6 +54,10 @@ a {
   &:hover {
     color: $primary-color-light;
   }
+}
+
+main {
+  flex: 1;
 }
 
 /**

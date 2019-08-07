@@ -1459,6 +1459,9 @@ html {
 body {
   background: #ecf7fa;
   text-align: center;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 h1 {
@@ -1482,6 +1485,10 @@ a:visited {
 }
 a:hover {
   color: #7bc9a0;
+}
+
+main {
+  flex: 1;
 }
 
 /**
@@ -1612,10 +1619,9 @@ footer {
   color: #fcfcfc;
   margin-top: 1em;
   padding-bottom: 1em;
-  font-size: 0.8rem;
 }
 footer .button {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 @media screen and (min-width: 40em) {
   footer .button {
@@ -1624,7 +1630,7 @@ footer .button {
 }
 @media screen and (min-width: 64em) {
   footer .button {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 }
 footer div:last-of-type a {
